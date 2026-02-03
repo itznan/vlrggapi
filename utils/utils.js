@@ -1,0 +1,32 @@
+/**
+ * VLR.GG API Utilities
+ * Modified by: itznan
+ * Original Creator: axsddlr (https://github.com/axsddlr)
+ * Common utilities for VLR.GG API
+ */
+
+const headers = {
+  "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0",
+};
+
+const region = {
+  "na": "north-america",
+  "eu": "europe",
+  "ap": "asia-pacific",
+  "la": "latin-america",
+  "la-s": "la-s",
+  "la-n": "la-n",
+  "oce": "oceania",
+  "kr": "korea",
+  "mn": "mena",
+  "gc": "gc",
+  "br": "Brazil",
+  "cn": "china",
+  "jp": "japan",
+  "col": "collegiate",
+};
+
+module.exports = {
+  headers,
+  region
+};
