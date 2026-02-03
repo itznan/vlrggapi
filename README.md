@@ -3,7 +3,7 @@
 An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), a site for Valorant Esports match and news coverage.
 
 **Original Creator:** [axsddlr](https://github.com/axsddlr)  
-**Modified by:** itznan
+**Modified by:** [itznan](https://github.com/itznan)  
 
 This is a Node.js conversion of the original Python FastAPI version.
 
