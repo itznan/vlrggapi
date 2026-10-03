@@ -3,7 +3,11 @@
 Fixtures are trimmed from real vlr.gg markup (Valorant Champions 2026,
 event 2766, fetched 2026-09-30 17:44 UTC, rendered in CEST).
 """
-from datetime import UTC, datetime
+try:
+    from datetime import UTC, datetime
+except ImportError:
+    from datetime import datetime, timezone
+    UTC = timezone.utc
 
 import pytest
 from fastapi import HTTPException

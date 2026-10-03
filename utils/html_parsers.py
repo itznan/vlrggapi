@@ -2,7 +2,11 @@
 Common HTML parsing utilities for VLR.GG scrapers
 """
 import re
-from datetime import UTC, datetime, timedelta
+try:
+    from datetime import UTC, datetime, timedelta
+except ImportError:
+    from datetime import datetime, timedelta, timezone
+    UTC = timezone.utc
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 

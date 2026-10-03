@@ -1,6 +1,10 @@
 import logging
 import re
-from datetime import UTC, datetime, timedelta
+try:
+    from datetime import UTC, datetime, timedelta
+except ImportError:
+    from datetime import datetime, timedelta, timezone
+    UTC = timezone.utc
 
 from utils.cache_manager import cache_manager
 from utils.constants import CACHE_TTL_EVENT_MATCHES, CACHE_TTL_EVENTS, VLR_BASE_URL, VLR_EVENTS_URL
